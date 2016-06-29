@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+
+* {background-color: #37474F;
+  }
+
+nav table, td {
+  border: 0.15em solid #DCE8EF;
+  border-collapse: collapse;
+  table-layout: fixed;
+  width:75%;
+  text-align:center;
+  margin-left: auto;
+  margin-right:auto;
+  overflow:hidden;
+  text-decoration: none; 
+}
+
+nav td {
+}
+
+nav a {
+  text-decoration: none;
+  color: #DCE8EF;
+  font-family: Arial;
+  font-size: 1.5em;    
+}
+  
+nav a:hover {
+  font-weight: bold;
+}
+
+h1 {
+  font-family: Arial;
+  font-size: 5em;
+  text-align: center;
+  margin-top: 0;
+}
+
+h2 {
+  background: black;
+  border-radius: .2em;
+  text-indent: .2em;
+}
+  
+h3 {
+  margin: 25px;
+}
+
+
+body {
+  font-family: Arial;
+  color: #DCE8EF;
+  }
+
+ div img {
+    width: 30%;
+    display:block;
+    margin:0 auto;
+  }
+
+div div p {
+    text-align: center;
+    font-family: Times;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: .1em solid #ccc;
+  border-top: none;
+}
+
+</style>
+
+<nav>
+    <table>
+      <tr>
+        <td><a href="#" class="tablinks" onclick="openTab(event, 'Experience')">Experience</a></td>
+        <td><a href="#" class="tablinks" onclick="openTab(event, 'Projects')">Projects</a></td>
+        <td><a href="#" class="tablinks" onclick="openTab(event, 'Resume Download')">Download Resume</a></td>
+        <td><a href="#" class="tablinks" onclick="openTab(event, 'Contact Information')">Contact Information</a></td>
+      </tr>
+   </table>
+    <br />
+</nav>
+
+<head></head>
+
+<body onload="openTab(event, 'Contact Information')">
+  <div id="Experience" class="tabcontent">
+  <p>
+    <h2>TechSmith Corporation
+      <h3 style>Student Information Technology Specialist Intern (April 2016 - Current
+        <ul>
+          <li>Desktop hardware and software maintenance, Windows and Mac support, end user support, account management, purchasing of IT assets.<br/><br/> </li>
+          <li>Imaging, managing asset tracking system, installation of networking equipment, troubleshooting network issues, designing hardware solutions for security and resource monitoring.</li>
+        </ul>
+        <br/>
+      </h3>
+    </h2>
+      <h2>Facility for Rare Isotope Beams
+        <h3>Student Information Systems Technician (February 2016 - April 2016)
+          <ul>
+            <li>Desktop hardware and software maintenance, end user support, ticket system environment, answered in person and phone technical questions.<br/><br/> </li>
+            <li>Imaging and formatting of workstations, installation of workstations, network cable drops, printer maintenance and support.</li>
+          </ul>
+          <br/>
+        </h3>
+      </h2>
+      <h2>Bayview Market
+        <h3>Cashier (2011 - 2012)
+          <ul>
+            <li>Customer service, Opened and Closed store, Finalized sales totals, Stocked and Cleaned store maintaining overall appearance, Built customer relationships<br/><br/> </li>
+            <li>Trained other employees, Worked as part of a team, Divided workload to improve efficiency.</li>
+          </ul>
+          <br/>
+        </h3>
+      </h2>
+      <h2>Gull Lake Sewer and Water Authority
+        <h3>Landscaper (Summer 2010)
+          <ul>
+            <li>Maintained multiple locations, set schedule and prioritized responsibilities, worked independently</li>
+          </ul>
+        </h3>
+        <br/>
+      </h2>
+    </p>
+  </div>
+
+  <div id="Projects" class="tabcontent">
+  <p>
+    As a member of the Information Technology Minor at MSU, I completed a senior design project for the
+    University Club of MSU. The role I took in the project was as a business analyst and technical advisor. My
+    team and I implemented employee workstations, helped to eliminate paper forms and documentations, and also improved workflow by utilizing software for shift scheduling and planning.
+  </p>
+  <p>
+    I also designed this personal website as a project for web design at MSU. I hope you find it informative
+   and helpful in learning more about me.
+  </p>
+
+  </div>
+
+  <div id="Resume Download" class="tabcontent">
+    <p>You can download my resume by clicking <a href="http://s000.tinyupload.com/?file_id=06037215506157726068">here.</a></p>
+  </div>
+
+  <div id="Contact Information" class="tabcontent">
+    <h1>Corey Wisser</h1>
+    <img src="https://scontent-ord1-1.xx.fbcdn.net/v/t1.0-9/10291080_10203715880445822_6331343397977195852_n.jpg?oh=ea1de0f10ed5d9c7d44ee975ae407be2&oe=5808F1D2">
+    <div>
+      <p>3839 Hunsaker Dr. Apt 726 B.<br />
+        East Lansing, MI 48823 <br />
+        Phone: (269) 251-3646 <br />
+        Email: WisserCo@msu.edu
+      </p>
+    </div>
+</p>
+  </div>
+
+<script>
+function openTab(evt, tabName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += "active";
+}
+</script>
+     
+</body>
+</html>
